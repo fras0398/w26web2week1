@@ -200,5 +200,6 @@ nav a:active {
 section {
     margin: 20px;
     border: 2px solid black;
-    padding: 15px; /* padding pushes content away from the edge of the element */
+    padding: 15px;
+    /* padding pushes content away from the edge of the element */
 }
