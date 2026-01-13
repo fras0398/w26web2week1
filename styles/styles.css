@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /**********************************************************
@@ -54,7 +141,7 @@ table {
 /* this will apply to the entire body of the page */
 body {
     max-width: 800px;
-    background-color:deepskyblue;
+    background-color: deepskyblue;
     /* to centre an element, use margin:0 auto */
     margin: 0 auto;
 }
@@ -69,6 +156,49 @@ h1 {
         margin, border and padding
         margin pushes elements away*/
 
-        /* two values means top-bottom, left-right */
-        margin:15px 0;
+    /* two values means top-bottom, left-right */
+    margin: 15px 0;
+}
+
+/* you can target elements based on what they are inside */
+
+section img {
+    /*only scale one dimension of an image, width or height*/
+    width: 35%;
+
+    /* floating an image will make the text sit next to it, and wrap around it */
+    float: left;
+
+    /* four value means top, right, bottom, left */
+    margin: 0 15px 15px 0;
+}
+
+nav a {
+    color: azure;
+    font-size: 1.2em;
+    /* ems are relative to the parent font size, 1.2em = 120% */
+    text-decoration: none;
+    /* removes underline from links */
+}
+
+/* links have states, which you style using pseudoclasses */
+nav a:hover {
+    color: crimson;
+}
+
+nav a:active {
+    color: rebeccapurple
+}
+
+/* there is also a visited state for links, when users have been to a link */
+
+/* style an id using # */
+#current {
+    background-color: purple
+}
+
+section {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 15px; /* padding pushes content away from the edge of the element */
 }
